@@ -41,12 +41,18 @@ public class Ohmcalculator {
                     System.out.println("voltage = "+ohm.calvoltage(current,resistance)+" .V");
                     break;
                 case 2:
-                    
-//                    calcurrent();
+                    System.out.print("Enter voltage: ");
+                    voltage = scan.nextFloat();
+                    System.out.print("Enter Resistance: ");
+                    resistance = scan.nextFloat();
+                    System.out.println("voltage = "+ohm.calcurrent(voltage,resistance)+" .V");
                     break;
                 case 3:
-                    System.out.println("ohm");
-//                calresistance();
+                    System.out.print("Enter voltage: ");
+                    voltage = scan.nextFloat();
+                    System.out.print("Enter current: ");
+                    current = scan.nextFloat();
+                    System.out.println("voltage = "+ohm.calresistance(voltage,current)+" .V");
                     break;
                 case 4:
                     System.exit(0);
